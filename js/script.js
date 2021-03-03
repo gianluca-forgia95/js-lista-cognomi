@@ -10,9 +10,13 @@ var nuovoCognome = prompt('Inserisci il tuo cognome');
 var cognomi = ['Forgia', 'Rossi','Bianchi','Mancini'];
 //Pusho il nuovo cognome nell'array
 cognomi.push(nuovoCognome);
+
 //Definisco il ciclo
 i = 0;
-while ( i <= cognomi.length ) {
+while ( i < cognomi.length ) {
+  //Metto l'array in ordine alfabetico
+  cognomi.sort();
+  var a = cognomi.indexOf(nuovoCognome, 1);
   console.log(cognomi[i]);
   i++;
 }
