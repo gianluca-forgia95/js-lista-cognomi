@@ -7,12 +7,13 @@ scrivi anche la posizione "umana" della lista in cui il nuovo utente si trova
 //Chiedo all'utente un cognome
 var nuovoCognome = prompt('Inserisci il tuo cognome');
 //Creo array cognomi
-var cognomi = ['Forgia', 'Rossi','Bianchi','Mancini','Duzioni','Balsano','Verdi'];
+var cognomi = ['','Forgia', 'Rossi','Bianchi','Mancini','Duzioni','Balsano','Verdi'];
 //Pusho il nuovo cognome nell'array
 cognomi.push(nuovoCognome);
 
+
 //Definisco il ciclo
-i = 0;
+  i = 1;
   while ( i < cognomi.length ) {
   //Metto l'array in ordine alfabetico
   cognomi.sort();
@@ -26,3 +27,8 @@ i = 0;
   }
   i++;
 }
+//Inserita lista con caratteri in minuscolo
+  for (var i = 0; i < cognomi.length; i++){
+  cognomi[i] = (cognomi[i].toLowerCase());
+  console.log( cognomi[i]);
+ }
