@@ -4,7 +4,15 @@ inserirlo in un array con altri cognomi: ‘Bianchi’, ‘Rossi’, ‘Duzioni�
 stampa la lista ordinata alfabeticamente
 scrivi anche la posizione "umana" della lista in cui il nuovo utente si trova
 */
-//chiedo all'utente un cognome
+//Chiedo all'utente un cognome
 var nuovoCognome = prompt('Inserisci il tuo cognome');
-//creo array cognomi
+//Creo array cognomi
 var cognomi = ['Forgia', 'Rossi','Bianchi','Mancini'];
+//Pusho il nuovo cognome nell'array
+cognomi.push(nuovoCognome);
+//Definisco il ciclo
+i = 0;
+while ( i <= cognomi.length ) {
+  console.log(cognomi[i]);
+  i++;
+}
